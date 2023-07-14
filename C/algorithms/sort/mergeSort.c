@@ -33,7 +33,7 @@ void merge(int arr[], int left, int mid, int right) {
 
 
     int rightHalfArr[n2];
-    for(int j = 0; j < n1; j++)
+    for(int j = 0; j < n2; j++)
         rightHalfArr[j] = arr[mid + j + 1];
 
     i = j = 0; //reinitialize counter  variables.

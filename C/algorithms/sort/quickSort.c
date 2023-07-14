@@ -27,6 +27,7 @@ int partition(int arr[], int start, int end) {
 void quickSort(int arr[], int start, int end) {
     if(start < end) {
         int q = partition(arr ,start, end);
+
         quickSort(arr, start, q -1);
         quickSort(arr,q +1, end);
     }
@@ -44,7 +45,7 @@ void printArr(int arr[]) {
         printf("%d ", arr[i]);
     printf("\n");
 }
-    
+
 int main() {
     int arr[SIZE];
     fillArr(arr);
